@@ -29,6 +29,7 @@ The goals / steps of this project are the following:
 [image15]: output_images/heatmap2.png
 [image16]: output_images/heatmap3.png
 [image17]: output_images/heatmap4.png
+[image18]: output_images/windows0.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -99,7 +100,10 @@ The first approach for sliding windows consists of first getting the location fo
 
 A better approach is to extract the HOG features only once for each image and then apply the sliding windows over those to see if there is a match, this is tested in cell #11
 
-Then in cell 12 I use a function to search multiple sizes and retrieve the results I decided to use only 2 different scales because if I added more the processing time is too slow
+Then in cell 12 I use a function to search multiple sizes and retrieve the results I decided to use 3 different scales because if I added more the processing time is too slow
+
+scale 1
+![alt text][image18]
 
 scale 1.5
 ![alt text][image8]
